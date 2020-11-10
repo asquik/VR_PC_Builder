@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6062502732005292304}
   - component: {fileID: 4750165085076866898}
   - component: {fileID: 5638187857715556134}
-  m_Layer: 13
+  m_Layer: 9
   m_Name: SnapCollider_RAM
   m_TagString: RAM
   m_Icon: {fileID: 0}

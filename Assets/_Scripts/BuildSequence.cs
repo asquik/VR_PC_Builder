@@ -13,6 +13,7 @@ public class BuildSequence : MonoBehaviour
     public int _stepCompletionTotal;
     public Image _stepImage;
     public Sprite[] _stepImages;
+    //public AudioClip[] _narrations;
 
 
 
@@ -29,9 +30,10 @@ public class BuildSequence : MonoBehaviour
         {
             case _Steps.S1Screws:
                 _currentObjectTag = "screw";
-                _stepCompletionTotal = 4;
+                _stepCompletionTotal = 5;
                 print("screws completed");
                 _stepImage.sprite = _stepImages[0];
+                //_narrations.AudioClip = _narrations[0];
                 break;
             case _Steps.S2RAM:
                 _currentObjectTag = "RAM";
@@ -46,19 +48,22 @@ public class BuildSequence : MonoBehaviour
                 _stepImage.sprite = _stepImages[2];
                 break;
             case _Steps.S4Heatsink:
-                _currentObjectTag = "Heatsink";
+                _currentObjectTag = "heatsink";
                 _stepCompletionTotal = 1;
                 print("Heatsink completed");
+                _stepImage.sprite = _stepImages[3];
                 break;
             case _Steps.S5GPU:
-                _currentObjectTag = "GPU;";
+                _currentObjectTag = "GPU";
                 _stepCompletionTotal = 1;
                 print("GPU completed");
+                _stepImage.sprite = _stepImages[4];
                 break;
             case _Steps.S6PSU:
                 _currentObjectTag = "PSU";
                 _stepCompletionTotal = 1;
                 print("PSU completed");
+                _stepImage.sprite = _stepImages[5];
                 break;
                     
 

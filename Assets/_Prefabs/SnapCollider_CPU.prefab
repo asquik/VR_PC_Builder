@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 157651372124833273}
   - component: {fileID: 522399811657838273}
   - component: {fileID: 3009347357561274995}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: SnapCollider_CPU
   m_TagString: CPU
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ public class SocketContainer : MonoBehaviour
     Dictionary<GameObject, bool> dictOfScrews = new Dictionary<GameObject, bool>();
     Dictionary<XRSocketInteractor, LayerMask> dictOfSocketInteractors = new Dictionary<XRSocketInteractor, LayerMask>();
     List<SocketManager> listofSocketManagers = new List<SocketManager>();
-    XRGrabInteractable containerInteractable;
+    //XRGrabInteractable containerInteractable;
     Rigidbody containerRB;
     public bool attachingEnabled = false;
     public bool grabbingEnabled = true;
@@ -19,7 +19,7 @@ public class SocketContainer : MonoBehaviour
 
     private void Awake()
     {
-        containerInteractable = GetComponent<XRGrabInteractable>();
+        //containerInteractable = GetComponent<XRGrabInteractable>();
         containerRB = GetComponent<Rigidbody>();
     }
     void Start()
@@ -37,7 +37,7 @@ public class SocketContainer : MonoBehaviour
             }
         }
         SetSocketsState(false);
-        permanentLayer = containerInteractable.interactionLayerMask;
+        //permanentLayer = containerInteractable.interactionLayerMask;
     }
 
     public void ChangeStateOfScrew(GameObject snapCollider, bool state)
@@ -46,13 +46,13 @@ public class SocketContainer : MonoBehaviour
         CheckIfGrabbingEnabled();
         if (grabbingEnabled)
         {
-            containerInteractable.interactionLayerMask = permanentLayer;
+            //containerInteractable.interactionLayerMask = permanentLayer;
             containerRB.useGravity = true;
             containerRB.isKinematic = false;
         }
         else
         {
-            containerInteractable.interactionLayerMask = 0;
+            //containerInteractable.interactionLayerMask = 0;
             containerRB.useGravity = false;
             containerRB.isKinematic = true;
         }

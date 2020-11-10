@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -18,7 +19,7 @@ public class SocketManager : MonoBehaviour
         socketInteractable = GetComponent<XRSocketInteractor>();
         socketInteractable.onSelectEnter.AddListener(SetStateAsBeingUsed);
         socketInteractable.onSelectExit.AddListener(SetStateAsBeingNotUsed);
-        socketContainer = transform.parent.GetComponent<SocketContainer>();
+        //socketContainer = transform.parent.GetComponent<SocketContainer>();
     }
 
     public void OnDestroy()
@@ -31,7 +32,7 @@ public class SocketManager : MonoBehaviour
     {
         if (gameObject.tag == "screw")
         {
-            socketContainer.ChangeStateOfScrew(gameObject, false);
+            //socketContainer.ChangeStateOfScrew(gameObject, false);
         }
         isActive = false;
 
@@ -41,7 +42,7 @@ public class SocketManager : MonoBehaviour
     {
         if (gameObject.tag == "screw")
         {
-            socketContainer.ChangeStateOfScrew(gameObject, true);
+            //socketContainer.ChangeStateOfScrew(gameObject, true);
         }
         isActive = true;
 

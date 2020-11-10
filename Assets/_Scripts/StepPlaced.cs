@@ -39,7 +39,7 @@ public class StepPlaced : MonoBehaviour
     {
         if (gameObject.tag == _buildSequence._currentObjectTag)
         {
-            _buildSequence._stepCompletion -= 1;
+            _buildSequence._stepCompletion -= 1; 
             // sounds ...... 
             _audioSource.clip = _failNarration;
             _audioSource.Play();

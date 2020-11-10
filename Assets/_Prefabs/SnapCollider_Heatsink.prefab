@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1486397081048696536}
   - component: {fileID: 3479747840606026702}
   - component: {fileID: 5145683648644435383}
-  m_Layer: 13
+  m_Layer: 12
   m_Name: SnapCollider_Heatsink
   m_TagString: heatsink
   m_Icon: {fileID: 0}

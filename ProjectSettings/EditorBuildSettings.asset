@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/scn_rebuild_5.21_UI.unity
     guid: 5c04ae5f2f996d343afcfa8c967e035b
+  - enabled: 1
+    path: Assets/_Scenes/scn_BuildStateSequence_TEST.unity
+    guid: 90a4a348a14618947a2f3c31e580af80
   - enabled: 0
     path: Assets/_Scenes/scn_snapping_XRtoolkit.unity
     guid: 402ffb6f16eb312419175f7e25aaad74
