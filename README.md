@@ -10,9 +10,10 @@ Feel free to download a build from itch.io or you can check out the build in thi
 ## Preview
 ![image](https://github.com/asquik/VR_PC_Builder/blob/master/Media/VR_PC_gif.gif)
 
-## Video (at my Portfolio Website)
+## [Video (at my Portfolio Website)](http://savytskyy.com/pc-building-simulator/)
 
-soon to come
+Check out my portfolio web-site
+http://savytskyy.com/pc-building-simulator/
 
 #### Tasks done:
 - Grabbing objects
